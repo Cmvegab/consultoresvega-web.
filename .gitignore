@@ -1,0 +1,18 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Documentos internos de trabajo (NO forman parte del sitio publicado)
+# Se mantienen solo en la carpeta local, fuera del repo público.
+*.docx
+consultores_handoff.md
+MEJORAS-auditoria-ahora-siguiente.md
+anti-spam-apps-script.md
+fase0-checklist-medicion.md
+informe_campana_rectificatoria_*.md
+keywords_google_ads_editor.csv
+negativas_google_ads_editor.csv
+plan-ejecucion-campana-rectificatoria.md
+plan_mejoras_campana_rectificatoria.md
+plan_visibilidad_ia_consultoresvega_*.md
+resumen_google_analytics_*.md
