@@ -5,7 +5,7 @@
   <!-- ══ PÁGINA INICIO ══ -->
   <url>
     <loc>https://www.consultoresvega.cl/</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="es-CL" href="https://www.consultoresvega.cl/"/>
@@ -14,7 +14,7 @@
   <!-- ══ PÁGINAS DE SERVICIO ══ -->
   <url>
     <loc>https://www.consultoresvega.cl/servicios/auditoria-tributaria/</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es-CL" href="https://www.consultoresvega.cl/servicios/auditoria-tributaria/"/>
@@ -22,7 +22,7 @@
 
   <url>
     <loc>https://www.consultoresvega.cl/servicios/auditoria-contable/</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es-CL" href="https://www.consultoresvega.cl/servicios/auditoria-contable/"/>
@@ -30,7 +30,7 @@
 
   <url>
     <loc>https://www.consultoresvega.cl/servicios/contabilidad/</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es-CL" href="https://www.consultoresvega.cl/servicios/contabilidad/"/>
@@ -38,7 +38,7 @@
 
   <url>
     <loc>https://www.consultoresvega.cl/servicios/remuneraciones/</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es-CL" href="https://www.consultoresvega.cl/servicios/remuneraciones/"/>
@@ -46,7 +46,7 @@
 
   <url>
     <loc>https://www.consultoresvega.cl/servicios/control-interno/</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="es-CL" href="https://www.consultoresvega.cl/servicios/control-interno/"/>
@@ -54,7 +54,7 @@
 
   <url>
     <loc>https://www.consultoresvega.cl/servicios/consultoria/</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="es-CL" href="https://www.consultoresvega.cl/servicios/consultoria/"/>
@@ -62,7 +62,7 @@
 
   <url>
     <loc>https://www.consultoresvega.cl/servicios/tributarios-mensuales/</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="es-CL" href="https://www.consultoresvega.cl/servicios/tributarios-mensuales/"/>
@@ -70,7 +70,7 @@
 
   <url>
     <loc>https://www.consultoresvega.cl/servicios/evaluaciones/</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="es-CL" href="https://www.consultoresvega.cl/servicios/evaluaciones/"/>

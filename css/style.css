@@ -1,3 +1,8 @@
+/* ─── Fuentes variables self-hosted (latin) ─── */
+@font-face { font-family:'Cormorant Garamond'; font-style:normal; font-weight:300 700; font-display:swap; src:url('/fonts/cormorant-garamond-latin-wght-normal.woff2') format('woff2-variations'), url('/fonts/cormorant-garamond-latin-wght-normal.woff2') format('woff2'); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family:'Cormorant Garamond'; font-style:italic; font-weight:300 700; font-display:swap; src:url('/fonts/cormorant-garamond-latin-wght-italic.woff2') format('woff2-variations'), url('/fonts/cormorant-garamond-latin-wght-italic.woff2') format('woff2'); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family:'DM Sans'; font-style:normal; font-weight:100 1000; font-display:swap; src:url('/fonts/dm-sans-latin-wght-normal.woff2') format('woff2-variations'), url('/fonts/dm-sans-latin-wght-normal.woff2') format('woff2'); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+
 /* ═══════════════════════════════════════════════════════════════
    CONSULTORES VEGA — Design System US$10,000
    Fonts: Cormorant Garamond (display) + DM Sans (UI)
@@ -1668,3 +1673,18 @@ details[open] .faq-icon { transform: rotate(45deg); }
   line-height: 1.7;
 }
 .wa-toast__horario strong { color: #1a1a2e; display: block; margin-bottom: 2px; }
+
+/* ═══════════════════════════════════════════════════════════════
+   ÁREAS TÁCTILES — mínimo 24px (WCAG 2.2) sin mover el layout:
+   el padding agranda la zona clicable y el margen negativo lo compensa.
+   ═══════════════════════════════════════════════════════════════ */
+.footer__col-link,
+.footer__legal-link,
+.footer__contact-item a,
+.contact-item__value a,
+.contact__map-link,
+.breadcrumb a,
+.hero__trust-pill a {
+  padding-block: 4px;
+  margin-block: -4px;
+}
