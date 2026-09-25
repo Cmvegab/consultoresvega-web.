@@ -130,6 +130,9 @@ Reglas de contenido vigentes:
 
 - Sin precios ni promociones ("1 mes gratis"): la oferta es **evaluación
   gratuita**. Tampoco `price`/`priceRange` con montos en el schema.
+  Excepción aprobada: la FAQ "¿Cuánto cobra un contador por mes?" mantiene sus
+  rangos referenciales en UF (tarifas del servicio ≠ promoción; la evaluación
+  sigue siendo gratis). No quitarla.
 - La firma **no** está inscrita en la CMF. El director, Lincoyán Vega Ovalle, fue
   auditor externo inscrito en la SVS (N° 229, 07/11/1991; hoy "Cancelado" en la
   CMF): citarlo siempre en pasado. Es perito judicial (Corte de Apelaciones de
