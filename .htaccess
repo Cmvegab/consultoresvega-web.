@@ -111,5 +111,10 @@
   Header set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
 </IfModule>
 
+# ── Bloquear documentos internos (.md) ────────────────────────
+<FilesMatch "\.md$">
+  Require all denied
+</FilesMatch>
+
 # ── Página 404 personalizada ──────────────────────────────────
 ErrorDocument 404 /404.html
