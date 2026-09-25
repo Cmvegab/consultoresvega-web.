@@ -16,3 +16,7 @@ plan-ejecucion-campana-rectificatoria.md
 plan_mejoras_campana_rectificatoria.md
 plan_visibilidad_ia_consultoresvega_*.md
 resumen_google_analytics_*.md
+
+# Copias y salidas locales que no deben desplegarse
+Web/
+graphify-out/
