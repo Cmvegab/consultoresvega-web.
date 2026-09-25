@@ -100,6 +100,9 @@
 
   # /servicios/ no tiene índice propio → sección de servicios del home
   RewriteRule ^servicios/?$ /#servicios [L,R=301,NE]
+
+  # /faq/ → página de preguntas frecuentes
+  RewriteRule ^faq/?$ /preguntas-frecuentes/ [L,R=301]
 </IfModule>
 
 # ── Seguridad básica ──────────────────────────────────────────

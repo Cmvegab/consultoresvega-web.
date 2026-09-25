@@ -109,9 +109,12 @@ evento GA4 `form_submit` y abre `wa.me` con el mensaje pre-armado.
 ## Contenido, SEO y datos estructurados
 
 Cada página lleva `canonical`, Open Graph y JSON-LD. `index.html` publica
-`AccountingService`/`LocalBusiness` con `OfferCatalog` y `FAQPage` (sin reseñas:
+`AccountingService`/`LocalBusiness` con `OfferCatalog` (sin reseñas:
 las propias del negocio no son elegibles en Google); las
-de servicio publican `Service` + `BreadcrumbList` + `FAQPage`. Al agregar o
+de servicio publican `Service` + `BreadcrumbList` + `FAQPage`. La FAQ general
+vive solo en `preguntas-frecuentes/` (WebPage + BreadcrumbList + FAQPage; sin
+CSS inline, como `terminos/`); el home ya no tiene sección FAQ y el menú "FAQ"
+apunta ahí. `/faq/` redirige 301 a esa página. Al agregar o
 renombrar una página hay que actualizar, en conjunto:
 
 1. `sitemap.xml`

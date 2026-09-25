@@ -692,36 +692,6 @@ ul, ol { list-style: none; }
   }
   </script>
 
-  <!-- FAQPage — refleja la FAQ visible de la home -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "@id": "https://www.consultoresvega.cl/#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿A qué tipo de empresas prestan servicios?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Atendemos sociedades anónimas, por acciones, de personas, empresas individuales, organizaciones sin fines de lucro y personas naturales." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Realizan trámites de iniciación de actividades?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Sí, acompañamos a los nuevos emprendedores en todo el proceso de formalización ante el SII y patentes municipales." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Atienden fuera de Viña del Mar?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Nuestra base es Viña del Mar, pero atendemos clientes en toda la V Región y contamos con servicios de consultoría remota para todo Chile." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuánto cobra un contador por mes?",
-        "acceptedAnswer": { "@type": "Answer", "text": "El costo mensual depende del tipo de contribuyente y la complejidad del servicio. Valores aproximados en UF: personas naturales o independientes entre 1 y 3 UF; empresas pequeñas entre 2 y 6 UF; pymes con trabajadores entre 5 y 11 UF; empresas más complejas desde 11 UF en adelante. El precio varía según cantidad de documentos, número de empleados, volumen de ingresos y servicios adicionales. Valores referenciales sujetos al valor de la UF y al alcance del servicio." }
-      }
-    ]
-  }
-  </script>
 
 </head>
 <body>
@@ -760,7 +730,7 @@ ul, ol { list-style: none; }
             <li><a href="/servicios/evaluaciones/" class="nav__dropdown-item">Evaluaciones de Empresa</a></li>
           </ul>
         </li>
-        <li><a href="#faq" class="nav__link">FAQ</a></li>
+        <li><a href="/preguntas-frecuentes/" class="nav__link">FAQ</a></li>
         <li><a href="#contacto" class="nav__link">Contacto</a></li>
       </ul>
 
@@ -785,7 +755,7 @@ ul, ol { list-style: none; }
   <a href="/" class="nav__overlay-link">Inicio</a>
   <a href="#nosotros" class="nav__overlay-link">Nosotros</a>
   <a href="#servicios" class="nav__overlay-link">Servicios</a>
-  <a href="#faq" class="nav__overlay-link">FAQ</a>
+  <a href="/preguntas-frecuentes/" class="nav__overlay-link">FAQ</a>
   <a href="#contacto" class="nav__overlay-link">Contacto</a>
   <a href="https://wa.me/56953330986" class="nav__overlay-wa" target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -1425,102 +1395,6 @@ ul, ol { list-style: none; }
   </div>
 </section>
 
-<!-- ═══════ FAQ ═══════ -->
-<section class="section section--parchment" id="faq" aria-labelledby="faq-heading">
-  <div class="container">
-    <div class="faq-section">
-
-      <div class="faq-section__header" data-reveal="up">
-        <span class="overline">Preguntas Frecuentes</span>
-        <h2 class="section-heading" id="faq-heading">
-          Resolvemos<br><em>sus dudas</em>
-        </h2>
-        <span class="gold-rule" aria-hidden="true" style="margin-inline:auto;display:block"></span>
-      </div>
-
-      <!-- FAQ Accordion -->
-      <div class="faq-col" data-reveal="up">
-        <div class="faq-list" role="list">
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-q" aria-expanded="false" aria-controls="faq-a1">
-              ¿A qué tipo de empresas prestan servicios?
-              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-a" id="faq-a1" hidden>
-              <p>Atendemos sociedades anónimas, por acciones, de personas, empresas individuales, organizaciones sin fines de lucro y personas naturales.</p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-q" aria-expanded="false" aria-controls="faq-a2">
-              ¿Realizan trámites de iniciación de actividades?
-              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-a" id="faq-a2" hidden>
-              <p>Sí, acompañamos a los nuevos emprendedores en todo el proceso de formalización ante el SII y patentes municipales.</p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-q" aria-expanded="false" aria-controls="faq-a3">
-              ¿Atienden fuera de Viña del Mar?
-              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-a" id="faq-a3" hidden>
-              <p>Nuestra base es Viña del Mar, pero atendemos clientes en toda la V Región y contamos con servicios de consultoría remota para todo Chile.</p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-q" aria-expanded="false" aria-controls="faq-a4">
-              ¿Cuánto cobra un contador por mes?
-              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-a" id="faq-a4" hidden>
-              <p>El costo mensual depende del tipo de contribuyente y la complejidad del servicio. Valores aproximados en UF:</p>
-              <ul class="faq-list-items">
-                <li><strong>Personas naturales o independientes:</strong> entre 1 y 3 UF mensuales</li>
-                <li><strong>Empresas pequeñas:</strong> entre 2 y 6 UF mensuales</li>
-                <li><strong>Pymes con trabajadores:</strong> entre 5 y 11 UF mensuales</li>
-                <li><strong>Empresas más complejas:</strong> desde 11 UF en adelante</li>
-              </ul>
-              <p>El precio varía según cantidad de documentos, número de empleados, volumen de ingresos y si se incluyen servicios adicionales como asesoría tributaria o planificación financiera.</p>
-              <p class="faq-a__note">* Valores referenciales. Pueden variar según el valor de la UF y el alcance del servicio.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-  (function(){
-    var items = document.querySelectorAll('.faq-item');
-    items.forEach(function(item){
-      var btn = item.querySelector('.faq-q');
-      var panel = item.querySelector('.faq-a');
-      btn.addEventListener('click', function(){
-        var open = btn.getAttribute('aria-expanded') === 'true';
-        // Close all
-        items.forEach(function(i){
-          i.querySelector('.faq-q').setAttribute('aria-expanded','false');
-          i.querySelector('.faq-a').hidden = true;
-          i.classList.remove('faq-item--open');
-        });
-        // Open clicked (unless it was already open)
-        if(!open){
-          btn.setAttribute('aria-expanded','true');
-          panel.hidden = false;
-          item.classList.add('faq-item--open');
-        }
-      });
-    });
-  })();
-  </script>
-</section>
-
 <!-- ═══════ CONTACTO ═══════ -->
 <section class="section section--white" id="contacto" aria-labelledby="contacto-heading">
   <div class="container">
@@ -1694,6 +1568,7 @@ ul, ol { list-style: none; }
         <p class="footer__col-title">Empresa</p>
         <ul class="footer__col-links" role="list">
           <li><a href="#nosotros" class="footer__col-link">Quiénes Somos</a></li>
+          <li><a href="/preguntas-frecuentes/" class="footer__col-link">Preguntas Frecuentes</a></li>
           <li><a href="#contacto" class="footer__col-link">Contacto</a></li>
         </ul>
       </div>

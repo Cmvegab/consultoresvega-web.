@@ -76,6 +76,13 @@
     <xhtml:link rel="alternate" hreflang="es-CL" href="https://www.consultoresvega.cl/servicios/evaluaciones/"/>
   </url>
 
+  <url>
+    <loc>https://www.consultoresvega.cl/preguntas-frecuentes/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- ══ PÁGINAS ADICIONALES ══ -->
   <url>
     <loc>https://www.consultoresvega.cl/politica-privacidad/</loc>
