@@ -295,6 +295,7 @@ function setUserDataEC(email, phone) {
 
     wrap.addEventListener('mouseenter', () => {
       bounds = wrap.getBoundingClientRect();
+      btn.style.transition = 'transform 0s';
     });
     wrap.addEventListener('mousemove', e => {
       if (!bounds) return;
@@ -305,6 +306,7 @@ function setUserDataEC(email, phone) {
       btn.style.transform = `translate(${dx}px, ${dy}px)`;
     });
     wrap.addEventListener('mouseleave', () => {
+      btn.style.transition = 'transform .35s cubic-bezier(.22,1,.36,1)';
       btn.style.transform = '';
       bounds = null;
     });
