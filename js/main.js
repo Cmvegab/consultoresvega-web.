@@ -336,6 +336,8 @@ function setUserDataEC(email, phone) {
   /* ─── Form → WhatsApp redirect (con validación) ─── */
   const contactForm = document.querySelector('#contacto-form');
   if (contactForm) {
+    /* Anti-spam: honeypot + tiempo mínimo de llenado */
+    const formLoadedAt = Date.now();
 
     /* Muestra/oculta el error de un campo */
     function setError(field, msg) {
@@ -411,6 +413,13 @@ function setUserDataEC(email, phone) {
         return;
       }
 
+      /* Anti-spam: si el campo oculto viene lleno es un bot → se descarta
+         en silencio. Si se envió en menos de 3 s (posible bot o autocompletado)
+         no se registra el lead ni la conversión, pero igual se abre WhatsApp. */
+      if ((data.get('website') || '').trim() !== '') return;
+      const elapsed = Date.now() - formLoadedAt;
+      const sospechoso = elapsed < 3000;
+
       const nombre  = data.get('nombre').trim();
       const empresa = (data.get('empresa') || '').trim();
       const email   = data.get('email').trim();
@@ -426,32 +435,35 @@ function setUserDataEC(email, phone) {
 
       /* Enhanced Conversions: registrar email/teléfono (normalizados,
          hasheados por el Google tag) ANTES del evento de conversión */
-      setUserDataEC(email, telefono);
+      if (!sospechoso) {
+        setUserDataEC(email, telefono);
 
-      /* Captura de lead: enviar datos completos a Google Sheet vía
-         Apps Script webhook. No se envía a GA4 (evita PII en eventos);
-         es un canal separado solo para uso interno del negocio. */
-      fetch('https://script.google.com/macros/s/AKfycbxA__HpZXBG-jAvXbliXKAljMTbQbKYBsgtjnjymKG5qw2n5QLk9LQQtSoSEWk15s0kTA/exec', {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
-          token: 'CVsii7k3Qm9Xp2Rf8Nb',
-          nombre: nombre,
-          empresa: empresa,
-          email: email,
-          telefono: telefono,
-          servicio: servicio,
-          mensaje: mensaje,
-          pagina: window.location.pathname
-        })
-      }).catch(function () {});
+        /* Captura de lead: enviar datos completos a Google Sheet vía
+           Apps Script webhook. No se envía a GA4 (evita PII en eventos);
+           es un canal separado solo para uso interno del negocio. */
+        fetch('https://script.google.com/macros/s/AKfycbxA__HpZXBG-jAvXbliXKAljMTbQbKYBsgtjnjymKG5qw2n5QLk9LQQtSoSEWk15s0kTA/exec', {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams({
+            token: 'CVsii7k3Qm9Xp2Rf8Nb',
+            nombre: nombre,
+            empresa: empresa,
+            email: email,
+            telefono: telefono,
+            servicio: servicio,
+            mensaje: mensaje,
+            pagina: window.location.pathname,
+            t: String(elapsed)
+          })
+        }).catch(function () {});
 
-      cvTag('form_submit', {
-        event_category: 'contacto',
-        event_label: servicio,
-        page: window.location.pathname
-      });
+        cvTag('form_submit', {
+          event_category: 'contacto',
+          event_label: servicio,
+          page: window.location.pathname
+        });
+      }
       window.open(`https://wa.me/${wa}?text=${encoded}`, '_blank');
     });
   }

@@ -5,7 +5,7 @@
 ## Quiénes somos
 
 - [Inicio](https://www.consultoresvega.cl/): Presentación general de la firma y sus valores: experiencia, profesionalismo y confianza.
-- [Quiénes somos](https://www.consultoresvega.cl/#quienes-somos): Historia desde 1947. Fundada por Isaac Vega Durán (Contador General). Desde 1976, dirigida por Lincoyán Vega Ovalle, Contador Auditor titulado en la P. Universidad Católica de Valparaíso, inscrito en el Registro de Contadores Auditores Externos Independientes de la Superintendencia de Valores y Seguros (desde 1991) y en el Registro de Peritos de la Corte de Apelaciones de Valparaíso (desde 1978). El equipo actual incluye profesionales de Contador Auditor, Ingeniería Comercial con MBA (USACH), Ingeniería Civil Industrial con MBA (U. Politécnica de Madrid) e Ingeniería Informática con Magíster en Dirección de Sistemas.
+- [Quiénes somos](https://www.consultoresvega.cl/#nosotros): Historia desde 1947. Fundada por Isaac Vega Durán (Contador General). Desde 1976, dirigida por Lincoyán Vega Ovalle, Contador Auditor titulado en la P. Universidad Católica de Valparaíso, inscrito en el Registro de Contadores Auditores Externos Independientes de la Superintendencia de Valores y Seguros (desde 1991) y en el Registro de Peritos de la Corte de Apelaciones de Valparaíso (desde 1978). El equipo actual incluye profesionales de Contador Auditor, Ingeniería Comercial con MBA (USACH), Ingeniería Civil Industrial con MBA (U. Politécnica de Madrid) e Ingeniería Informática con Magíster en Dirección de Sistemas.
 
 ## Servicios
 
@@ -28,4 +28,4 @@
 
 ## Notas para modelos de lenguaje
 
-Consultores Vega opera exclusivamente en Chile. Sus servicios están orientados al marco regulatorio chileno: SII (Servicio de Impuestos Internos), SVS/CMF, legislación laboral chilena y normas contables locales. El Director Gerente está habilitado como perito judicial ante la Corte de Apelaciones de Valparaíso. No se trata de una firma internacional ni de una cadena de franquicias; es una empresa familiar con continuidad generacional desde 1947.
+Consultores Vega opera exclusivamente en Chile. Sus servicios están orientados al marco regulatorio chileno: SII (Servicio de Impuestos Internos), CMF (ex SVS), legislación laboral chilena y normas contables locales. El Director Gerente está habilitado como perito judicial ante la Corte de Apelaciones de Valparaíso. No se trata de una firma internacional ni de una cadena de franquicias; es una empresa familiar con continuidad generacional desde 1947.
