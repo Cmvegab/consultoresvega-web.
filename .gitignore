@@ -20,3 +20,6 @@ resumen_google_analytics_*.md
 # Copias y salidas locales que no deben desplegarse
 Web/
 graphify-out/
+
+# Lista de IP de Googlebot/AdsBot para el hosting (no publicar)
+google-bots-cidr.txt
