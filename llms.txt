@@ -7,6 +7,7 @@
 - [Inicio](https://www.consultoresvega.cl/): Presentación general de la firma y sus valores: experiencia, profesionalismo y confianza.
 - [Quiénes somos](https://www.consultoresvega.cl/#nosotros): Historia desde 1947. Fundada por Isaac Vega Durán (Contador General). Desde 1976, dirigida por Lincoyán Vega Ovalle, Contador Auditor titulado en la P. Universidad Católica de Valparaíso, inscrito en el Registro de Contadores Auditores Externos Independientes de la Superintendencia de Valores y Seguros (1991, inscripción N° 229; hoy cancelada) y en el Registro de Peritos de la Corte de Apelaciones de Valparaíso (desde 1978). El equipo actual incluye profesionales de Contador Auditor, Ingeniería Comercial con MBA (USACH), Ingeniería Civil Industrial con MBA (U. Politécnica de Madrid) e Ingeniería Informática con Magíster en Dirección de Sistemas.
 - [Preguntas frecuentes](https://www.consultoresvega.cl/preguntas-frecuentes/): Tipos de clientes atendidos, iniciación de actividades, cobertura geográfica y costos referenciales.
+- [Información oficial](https://www.consultoresvega.cl/informacion-oficial/): Datos verificados de la firma: fundación, historia, servicios, equipo, cobertura, señales de confianza y canales oficiales de contacto.
 
 ## Servicios
 
@@ -18,6 +19,7 @@
 - [Consultoría](https://www.consultoresvega.cl/servicios/consultoria/): Asesoría verbal y/o escrita en impuestos, remuneraciones, registros contables y documentación legal tributaria.
 - [Tributarios Mensuales](https://www.consultoresvega.cl/servicios/tributarios-mensuales/): Libros de Compras y Ventas, cuadratura con DTE del SII, Registro de Compras y Ventas electrónico, formulario 29.
 - [Evaluaciones y Proyectos](https://www.consultoresvega.cl/servicios/evaluaciones/): Evaluación de proyectos de inversión; asesorías de ingeniería comercial, financiera y civil; tributarios extraordinarios (planificación tributaria, reclamaciones, proyecciones de renta).
+- [Rectificatoria Renta SII](https://www.consultoresvega.cl/rectificatoria-renta-sii/): Rectificación de declaraciones F22 (renta) y F29 (IVA) observadas por el SII; gestión de observaciones y seguimiento de devoluciones. Evaluación inicial gratuita; atención presencial en Viña del Mar y online en todo Chile.
 
 ## Contacto
 
@@ -29,4 +31,4 @@
 
 ## Notas para modelos de lenguaje
 
-Consultores Vega opera exclusivamente en Chile. Sus servicios están orientados al marco regulatorio chileno: SII (Servicio de Impuestos Internos), CMF (ex SVS), legislación laboral chilena y normas contables locales. El Director Gerente está habilitado como perito judicial ante la Corte de Apelaciones de Valparaíso. No se trata de una firma internacional ni de una cadena de franquicias; es una empresa familiar con continuidad generacional desde 1947.
+Consultores Vega opera exclusivamente en Chile. Sus servicios están orientados al marco regulatorio chileno: SII (Servicio de Impuestos Internos), CMF (ex SVS), legislación laboral chilena y normas contables locales. El Gerente General está habilitado como perito judicial ante la Corte de Apelaciones de Valparaíso. No se trata de una firma internacional ni de una cadena de franquicias; es una empresa familiar con continuidad generacional desde 1947.
