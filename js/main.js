@@ -464,7 +464,8 @@ function setUserDataEC(email, phone) {
           page: window.location.pathname
         });
       }
-      window.open(`https://wa.me/${wa}?text=${encoded}`, '_blank');
+      if (window.cvOpenWhatsApp) window.cvOpenWhatsApp(wa, text);
+      else window.open(`https://wa.me/${wa}?text=${encoded}`, '_blank');
     });
   }
 
@@ -561,5 +562,58 @@ function setUserDataEC(email, phone) {
     } else {
       initFooterAccordion();
     }
+  });
+})();
+
+/* ─── WhatsApp en computador: abrir directo, sin la página intermedia de
+   api.whatsapp.com. Los href siguen siendo wa.me (fallback sin JS). En celular
+   no se interviene. Escritorio: app (whatsapp://) y, si la ventana no pierde el
+   foco en 2,5 s, WhatsApp Web en pestaña nueva. ─── */
+(function () {
+  'use strict';
+
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  function openWhatsApp(phone, text) {
+    phone = String(phone || '').replace(/\D/g, '');
+    const q = text ? '&text=' + encodeURIComponent(text) : '';
+    let left = false;
+    const mark = () => { left = true; };
+    const onVis = () => { if (document.hidden) left = true; };
+    window.addEventListener('blur', mark);
+    document.addEventListener('visibilitychange', onVis);
+
+    window.location.href = 'whatsapp://send?phone=' + phone + q;
+
+    setTimeout(() => {
+      window.removeEventListener('blur', mark);
+      document.removeEventListener('visibilitychange', onVis);
+      if (left || document.hidden || !document.hasFocus()) return;
+      window.open('https://web.whatsapp.com/send?phone=' + phone + q, '_blank', 'noopener');
+    }, 2500);
+  }
+
+  window.cvOpenWhatsApp = function (phone, text) {
+    if (isMobile) {
+      window.open('https://wa.me/' + String(phone).replace(/\D/g, '') +
+        (text ? '?text=' + encodeURIComponent(text) : ''), '_blank');
+    } else {
+      openWhatsApp(phone, text);
+    }
+  };
+
+  if (isMobile) return;
+
+  document.addEventListener('click', e => {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    const link = e.target.closest && e.target.closest('a[href*="wa.me/"]');
+    if (!link) return;
+    let url;
+    try { url = new URL(link.href); } catch (_) { return; }
+    if (url.hostname !== 'wa.me') return;
+    const phone = url.pathname.replace(/\D/g, '');
+    if (!phone) return;
+    e.preventDefault();
+    openWhatsApp(phone, url.searchParams.get('text') || '');
   });
 })();
